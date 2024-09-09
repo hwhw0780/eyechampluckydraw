@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/10 EyeChamp Lucky Draw</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>10/10 EyeChamp Lucky Draw</h1>
+    <h2>Stand a Chance to win iPhone 15 Pro Max</h2>
+
+    <!-- Prize List Section -->
+    <div id="prize-list">
+        <h2>Prize Lists:</h2>
+        <ul>
+            <li><strong>Grand Prize:</strong> iPhone 15 Pro Max</li>
+            <li><strong>2nd Prize:</strong> iPad Pro 11</li>
+            <li><strong>3rd Prize:</strong> Cash Voucher $1010</li>
+            <li><strong>Consolation Prizes:</strong></li>
+            <ul>
+                <li>Cash Voucher $101.0</li>
+                <li>Cash Voucher $10.10</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Form for user's name and phone number -->
+    <div id="form-container">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+        <button onclick="startGame()">Submit</button>
+    </div>
+
+    <!-- Cards container (hidden initially) -->
+    <div id="cards-container" style="display: none;">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="1.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="7.png" alt="iPhone 15 Pro Max">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="2.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="8.png" alt="Apple Watch Series 8">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="3.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="9.png" alt="AirPods Pro">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="4.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="10.png" alt="MacBook Pro">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="5.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="11.png" alt="iPad Pro">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="6.png" alt="Card Front">
+                </div>
+                <div class="card-back">
+                    <img src="12.png" alt="Samsung Galaxy S23">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Greeting message (hidden initially) -->
+    <div id="greeting" style="display: none; margin-top: 20px;">
+        <h2 id="greetingMessage"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
